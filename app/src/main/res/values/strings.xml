@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Finance</string>
+    <string name="add_operation">Add operation</string>
+    <string name="change_button_operation">Change operation</string>
+    <string name="operation_type_text">Select operation type</string>
+    <string name="operation_name_text">Enter operation name</string>
+    <string name="operation_cost_text">Enter operation cost</string>
+    <string name="wrong">Something wrong</string>
+    <string name="incorect_input">You entered something incorrectly</string>
+    <string name="delete_operation">Delete</string>
+    <string name="change_operation">Edit</string>
+    <string name="total_cost">Total cost:</string>
+    <string name="incoming">Incoming</string>
+    <string name="expenses">Expenses</string>
+    <string name="operations">Operations</string>
+    <string name="list">List</string>
+    <string name="graph">Graph</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.AddOperationActivity"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/main_color_text"
+                android:text="@string/operation_type_text" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp">
+            <Spinner
+                android:id="@+id/operationTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/operation_type_text"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color_text"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="@string/operation_name_text" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp">
+            <EditText
+                android:id="@+id/operationNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="11"
+                android:textColor="@color/main_color_text"
+                android:maxLength="100"
+                android:contentDescription="@string/operation_name_text"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color_text"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="@string/operation_cost_text" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp">
+            <EditText
+                android:id="@+id/operationCostTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/main_color_text"
+                android:ems="11"
+                android:maxLength="7"
+                android:inputType="number" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addOperationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/left_right_button_dimen"
+        android:layout_marginBottom="@dimen/bottom_button_dimen"
+        android:text="@string/add_operation"
+        android:backgroundTint="@color/button_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

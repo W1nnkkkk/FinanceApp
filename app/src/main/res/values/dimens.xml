@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="operationImageDimen">5dp</dimen>
+    <dimen name="left_right_button_dimen">5dp</dimen>
+    <dimen name="bottom_button_dimen">10dp</dimen>
+</resources>
