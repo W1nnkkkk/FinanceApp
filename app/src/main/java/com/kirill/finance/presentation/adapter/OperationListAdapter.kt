@@ -1,28 +1,19 @@
 package com.kirill.finance.presentation.adapter
 
 import android.content.Context
-import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.RecyclerView
 import com.kirill.finance.R
-import com.kirill.finance.domain.operation.usecases.DeleteOperationUseCase
-import com.kirill.finance.domain.operation.usecases.EditCostOperationUseCase
-import com.kirill.finance.domain.operation.usecases.EditNameOperationUseCase
-import com.kirill.finance.presentation.AddOperationActivity
-import com.kirill.finance.presentation.OperationListFragment
 import com.kirill.finance.presentation.operation.OperationListItem
 import com.kirill.finance.presentation.operation.mapper.OperationListItemMapper
-import com.kirill.finance.presentation.viewmodel.OperationViewModel
+import com.kirill.finance.presentation.viewmodel.operation.OperationViewModel
 import java.lang.reflect.Field
 import javax.inject.Inject
 

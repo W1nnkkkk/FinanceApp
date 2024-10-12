@@ -1,4 +1,4 @@
-package com.kirill.finance.presentation.viewmodel
+package com.kirill.finance.presentation.viewmodel.operation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

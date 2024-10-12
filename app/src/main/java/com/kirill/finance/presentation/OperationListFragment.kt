@@ -16,7 +16,7 @@ import com.kirill.finance.R
 import com.kirill.finance.databinding.FragmentOperationListBinding
 import com.kirill.finance.presentation.operation.OperationListItem
 import com.kirill.finance.presentation.adapter.OperationListAdapter
-import com.kirill.finance.presentation.viewmodel.OperationViewModel
+import com.kirill.finance.presentation.viewmodel.operation.OperationViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import jakarta.inject.Inject
 import kotlinx.serialization.encodeToString

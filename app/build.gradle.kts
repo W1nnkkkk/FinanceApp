@@ -71,6 +71,11 @@ dependencies {
     var lifeCycleVersion = "2.8.6"
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleVersion")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifeCycleVersion")
+
+    implementation(libs.retrofit)
+    implementation(libs.okHttp)
+    implementation(libs.retrofit.serialization)
+    implementation(libs.retrofit.converter)
 }
 
 kapt {

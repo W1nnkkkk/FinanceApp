@@ -1,35 +1,27 @@
 package com.kirill.finance.presentation
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.Log
-import android.view.MotionEvent
-import android.view.View
-import android.view.View.OnTouchListener
-import androidx.activity.enableEdgeToEdge
-import androidx.activity.result.ActivityResultCallback
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.LifecycleOwner
 import com.kirill.finance.R
 import com.kirill.finance.databinding.ActivityMainBinding
-import com.kirill.finance.domain.operation.OperationItem
-import com.kirill.finance.domain.operation.OperationItemRepository
-import com.kirill.finance.domain.operation.OperationType
-import com.kirill.finance.domain.operation.usecases.GetOperationsUseCase
-import com.kirill.finance.presentation.viewmodel.OperationViewModel
+import com.kirill.finance.presentation.viewmodel.currency.CurrencyViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import jakarta.inject.Inject
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
+
+    @Inject
+    lateinit var currencyViewModel : CurrencyViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +40,10 @@ class MainActivity : AppCompatActivity() {
                 OperationListFragment.newInstance()
             )
         }
+
+        currencyViewModel.item.observe(this as LifecycleOwner, {
+            Log.d("LOG", it.rusValue.toString())
+        })
 
         binding.bottomNav.setOnItemSelectedListener {
             when (it.itemId) {

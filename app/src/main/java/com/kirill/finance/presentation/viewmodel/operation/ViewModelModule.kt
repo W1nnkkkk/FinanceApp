@@ -1,4 +1,4 @@
-package com.kirill.finance.presentation.viewmodel
+package com.kirill.finance.presentation.viewmodel.operation
 
 import com.kirill.finance.domain.operation.usecases.DeleteOperationUseCase
 import com.kirill.finance.domain.operation.usecases.EditCostOperationUseCase
@@ -8,8 +8,6 @@ import com.kirill.finance.domain.operation.usecases.InsertOperationUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ActivityComponent
-import dagger.hilt.android.scopes.ActivityScoped
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 

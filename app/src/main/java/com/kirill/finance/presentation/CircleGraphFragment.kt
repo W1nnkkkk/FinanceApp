@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentController
 import androidx.lifecycle.LifecycleOwner
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.PieChart
@@ -18,9 +17,7 @@ import com.github.mikephil.charting.formatter.PercentFormatter
 import com.github.mikephil.charting.utils.MPPointF
 import com.kirill.finance.R
 import com.kirill.finance.databinding.FragmentCircleGraphBinding
-import com.kirill.finance.domain.operation.OperationType
-import com.kirill.finance.domain.operation.usecases.GetOperationsUseCase
-import com.kirill.finance.presentation.viewmodel.OperationViewModel
+import com.kirill.finance.presentation.viewmodel.operation.OperationViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
