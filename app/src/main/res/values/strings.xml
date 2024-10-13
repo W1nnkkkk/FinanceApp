@@ -15,4 +15,5 @@
     <string name="operations">Operations</string>
     <string name="list">List</string>
     <string name="graph">Graph</string>
+    <string name="currency">Currency</string>
 </resources>

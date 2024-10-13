@@ -13,4 +13,10 @@
         android:icon="@drawable/ic_graph"
         />
 
+    <item
+        android:id="@+id/currency"
+        android:title="@string/currency"
+        android:icon="@drawable/ic_currency"
+        />
+
 </menu>

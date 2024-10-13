@@ -20,9 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
 
-    @Inject
-    lateinit var currencyViewModel : CurrencyViewModel
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -41,10 +38,6 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        currencyViewModel.item.observe(this as LifecycleOwner, {
-            Log.d("LOG", it.rusValue.toString())
-        })
-
         binding.bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.listOperations -> {
@@ -58,6 +51,13 @@ class MainActivity : AppCompatActivity() {
                     setFragment(
                         R.id.fragmentLayout,
                         CircleGraphFragment.newInstance()
+                    )
+                }
+
+                R.id.currency -> {
+                    setFragment(
+                        R.id.fragmentLayout,
+                        CurrencyFragment.newInstance()
                     )
                 }
             }
