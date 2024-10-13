@@ -34,7 +34,8 @@
                 android:id="@+id/russianCurrency"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal"
+                android:maxLength="10"/>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
